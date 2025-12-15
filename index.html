@@ -7,6 +7,11 @@
     <title>Document</title>
 
     <style>
+.bg-image-wrap {
+    position: relative;
+    z-index: 1;
+}
+
 .bg-image {
     background-image: url(lawncareimg.jpg);
     background-repeat: no-repeat;
@@ -17,7 +22,11 @@
     outline: 6px solid darkolivegreen;
    background-blend-mode: multiply;
     background-color: grey;
-    position: relative;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
     
 }
 
@@ -34,7 +43,20 @@
     left: 10%;
     top: 30%;
     padding: 1em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    
 }
+    input {
+max-width: 50px;
+block-size: 60px;
+    }
+
+    input .message {
+        height: 100%;
+    }
 
     </style>
 
@@ -43,12 +65,18 @@
     <div class="header">
         <button>Home</button>
     </div>
-
+<div class="bg-image-wrap">
     <div class="bg-image">
 <div class="contact"> 
     <h1>Contact</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt  quibusdam aut. Neque quibusdam ea, alias remiti officiis?</p>
+    <form>
+        <input name="name" placeholder="Enter name"/>
+        <input name="email" placeholder="Enter email"/>
+        <input name="message" placeholder="Enter message"/>
+        <button type="submit">Send</button>
+    </form>
  </div>
+    </div>
     </div>
 </body>
        
