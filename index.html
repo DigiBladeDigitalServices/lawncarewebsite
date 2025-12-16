@@ -36,45 +36,52 @@
     box-shadow: 10px 10px 5px rgb(0, 0, 0);
    width: 40%;
    min-width: 320px;
+   min-height: 470px;
     font-size: 1.6rem;
     color: darkolivegreen;
-    background-color: beige;
+    background-color: hsl(60, 38%, 94%);
+    background-blend-mode: multiply;
     position: absolute;
     left: 10%;
-    top: 30%;
+    top: 28%;
     padding: 1em;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    
+    text-align: center;
     
 }
-    input {
-max-width: 50px;
-block-size: 60px;
-    }
 
-    input .message {
-        height: 100%;
-    }
-
+input, textarea {
+    width: 100%;
+    resize:none;
+}
+    
     </style>
 
 </head>
 <body>
+
     <div class="header">
         <button>Home</button>
     </div>
+
 <div class="bg-image-wrap">
+
     <div class="bg-image">
 <div class="contact"> 
     <h1>Contact</h1>
-    <form>
-        <input name="name" placeholder="Enter name"/>
-        <input name="email" placeholder="Enter email"/>
-        <input name="message" placeholder="Enter message"/>
-        <button type="submit">Send</button>
-    </form>
+
+    <form action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="27febdc7-5fa9-4663-9e03-fc4fe78b2204">
+  <input type="text" name="name" placeholder="name" required>
+  <input type="email" name="email" placeholder="email" required>
+  <textarea rows="5" name="message" placeholder="message" required></textarea>
+  <button type="submit">Submit</button>
+</form>
+
+
+
  </div>
     </div>
     </div>
