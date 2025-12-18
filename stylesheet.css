@@ -53,24 +53,6 @@ h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
-.header {
-  z-index: 1;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding: 25px;
-  background-color: #FAFAFA;
-  display: flex
-}
-
-.inner-header {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: right;
-  float: left;
-}
-
 
 
 @media (max-width: 450px) {
