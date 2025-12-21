@@ -53,6 +53,30 @@ h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+.header {
+  text-align: center;
+  border: 5px solid black;
+}
+
+.container {
+  border: 5px solid black;
+  position: sticky;
+  
+}
+
+ul{
+  display: flex;
+  list-style-type: none;
+  margin-right: 20px
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
 
 
 @media (max-width: 450px) {

@@ -9,7 +9,7 @@
     <style>
 .bg-image-wrap {
     position: relative;
-    z-index: 1;
+    z-index: 0;
 }
 
 .bg-image {
@@ -18,7 +18,7 @@
     background-size: cover;
     background-position: top right;
     padding: 23.5em;
-    margin-top: 5.4em;
+    
     outline: 6px solid lightgray;
    background-blend-mode: multiply;
     background-color: grey;
@@ -49,6 +49,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     text-align: center;
+    overflow: visible;
     
 }
 
@@ -62,7 +63,24 @@ input, textarea {
 </head>
 <body>
 
-    
+    <div class="header">
+        <h1>Welcome</h1>
+    </div>
+
+<div class="container">
+<div class="nav">
+
+<div class="logo">
+    <img src="download.svg">
+    </div>
+
+    <ul>
+        <li><button>Home</button></li>
+        <li><button>About</button></li>
+        <li><button>Gallery</button></li>
+    </ul>
+    </div>
+</div>
 
 <div class="bg-image-wrap">
 
@@ -80,10 +98,13 @@ input, textarea {
 
  </div>
     </div>
+    <div class="foot">
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit maxime vel, eaque itaque at ad corrupti debitis eveniet omnis doloremque minus illum eum tempore veritatis sunt delectus quo vero temporibus!</p>
+</div>
     </div>
 
 <div class="foot">
-
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit maxime vel, eaque itaque at ad corrupti debitis eveniet omnis doloremque minus illum eum tempore veritatis sunt delectus quo vero temporibus!</p>
 </div>
 
 </body>
