@@ -56,12 +56,25 @@ h1, h2, h3, h4, h5, h6 {
 .header {
   text-align: center;
   border: 5px solid black;
+  display: flex;
+  justify-content: space-between;
+  font-size: .9em;
+}
+
+.number {
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
+  z-index: 1;
   border: 5px solid black;
   position: sticky;
-  
+  top: 0;
+  background-color: #FAFAFA;
+display: flex;
+ height: 100px;
+
 }
 
 ul{
@@ -74,9 +87,14 @@ ul{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
+  width: 100%;
+  
 }
 
+.foot {
 
+}
 
 
 @media (max-width: 450px) {
