@@ -55,10 +55,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .header {
   text-align: center;
-  border: 5px solid black;
+  color: #FAFAFA;
+  border-bottom: black 5px solid;
+  font-size: .6em;
+  background-color: rgb(105, 10, 10);
+  
+}
+
+.header-inner {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  font-size: .9em;
+  margin-inline: 10%;
 }
 
 .number {
@@ -68,12 +76,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
   z-index: 1;
-  border: 5px solid black;
   position: sticky;
   top: 0;
   background-color: #FAFAFA;
 display: flex;
- height: 100px;
+ height: 80px;
 
 }
 
