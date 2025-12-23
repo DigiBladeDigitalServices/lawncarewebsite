@@ -74,14 +74,14 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
 }
 
-.container {
+.nav-container {
   z-index: 10;
   position: sticky;
   top: 0;
   background-color: #FAFAFA;
 display: flex;
  height: 80px;
-
+border-bottom: gray 4px solid;
 }
 
 ul{
@@ -100,10 +100,27 @@ ul{
   top: 0;
 }
 
-.foot {
-
+.footer {
+background-color: rgb(250, 250, 250);
 }
 
+.footer-inner {
+  width: 100%;
+  border: 20px solid lightgray;
+ display: flex;
+  text-align: center;
+  padding: 20px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.efi, .price, .location {
+  border: 5px solid darkolivegreen;
+  border-radius: 2em;
+  padding: 20px;
+ width: 400px;
+ font-size: 1.2em;
+}
 
 @media (max-width: 450px) {
   .bg-image {
