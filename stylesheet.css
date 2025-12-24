@@ -122,6 +122,34 @@ background-color: rgb(250, 250, 250);
  font-size: 1.2em;
 }
 
+.page-border {
+  border: 40px solid lightgray;
+  height: 800px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  font-size: 2;
+}
+
+.page-border img {
+  margin-left: 5%;
+  margin-top: 10%;
+  
+}
+
+.about {
+
+}
+
+.family {
+
+}
+
+h1 {
+  text-align: center;
+}
+
 @media (max-width: 450px) {
   .bg-image {
     background-size: cover;
