@@ -198,6 +198,7 @@ bottom: 70%;
 text-align: center;
 }
 
+/* media breakpoints */
 @media (max-width: 450px) {
   .bg-image {
     background-size: cover;
